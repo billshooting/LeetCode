@@ -8,6 +8,6 @@ public class Solution {
             for(int j = m - 1 - i; j >=0; j--) map[j, n - 1 - i] = map[j + 1, n - 1 - i] + map[j, n - i];
             for(int j = n - 1 - i; j >=0; j--) map[m - 1 - i, j] = map[m - i, j] + map[m - 1 - i, j + 1];
         }
-        return map[0,0];
+        return map[0, 0];
     }
 }
